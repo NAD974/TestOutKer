@@ -6,10 +6,8 @@
     <title>Test de Santé Cardiovasculaire - CPTS Australe</title>
     <meta name="description" content="Évaluez votre risque cardiovasculaire avec le test officiel de la CPTS Australe - Mois du Cœur">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
 </head>
-    <script src="app.js"></script>
-
 <body>
     <!-- Page d'Accueil -->
     <div id="homepage" class="page active">
@@ -17,31 +15,37 @@
             <!-- Header Hero CPTS -->
             <div class="hero-section">
                 <div class="cpts-logo">
-    <img src="logo-cpts-australe-ban.png" alt="CPTS Australe - Communauté Professionnelle Territoriale de Santé" class="logo-banner">
-</div>
+                    <img src="images/logo-cpts-australe.png" alt="CPTS Australe - Communauté Professionnelle Territoriale de Santé" class="logo-banner" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display: none;">
+                        <div class="logo-icon">🏥</div>
+                        <div class="logo-text">CPTS AUSTRALE</div>
+                    </div>
+                </div>
 
-               <svg viewBox="0 0 160 140" width="90" height="80" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="degrade-reunion" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#167baa"/>
-      <stop offset="30%" stop-color="#e67d3d"/>
-      <stop offset="60%" stop-color="#F1C40F"/>
-      <stop offset="100%" stop-color="#aa7182"/>
-    </linearGradient>
-    <filter id="ombre" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#167baa" flood-opacity="0.14"/>
-    </filter>
-  </defs>
-  <path 
-    d="M80,130 C20,90 8,50 40,30
-       C65,14 90,38 80,58
-       C70,38 95,14 120,30
-       C152,50 140,90 80,130Z"
-    fill="url(#degrade-reunion)"
-    filter="url(#ombre)"
-    stroke="#fff" stroke-width="4"
-  />
-</svg>
+                <div class="heart-icon">
+                    <svg viewBox="0 0 160 140" width="80" height="70" xmlns="http://www.w3.org/2000/svg" class="heart-svg">
+                        <defs>
+                            <linearGradient id="degrade-reunion" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#167baa"/>
+                                <stop offset="30%" stop-color="#e67d3d"/>
+                                <stop offset="60%" stop-color="#F1C40F"/>
+                                <stop offset="100%" stop-color="#aa7182"/>
+                            </linearGradient>
+                            <filter id="ombre" x="-10%" y="-10%" width="120%" height="120%">
+                                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#167baa" flood-opacity="0.14"/>
+                            </filter>
+                        </defs>
+                        <path 
+                            d="M80,130 C20,90 8,50 40,30
+                               C65,14 90,38 80,58
+                               C70,38 95,14 120,30
+                               C152,50 140,90 80,130Z"
+                            fill="url(#degrade-reunion)"
+                            filter="url(#ombre)"
+                            stroke="#fff" stroke-width="3"
+                        />
+                    </svg>
+                </div>
 
                 <h1 class="hero-title">Koman i lé ou kèr ?</h1>
                 <p class="hero-subtitle-creole">"Comment va votre cœur ?"</p>
@@ -81,7 +85,7 @@
                 </div>
 
                 <button class="btn btn-primary btn-lg" id="start-test-btn">
-                    ❤️ Commencer le Test
+                    💗 Commencer le Test
                 </button>
             </div>
 
@@ -142,7 +146,7 @@
                         Suivant →
                     </button>
                     <button class="btn btn-success" id="finish-btn" style="display: none;">
-                        Voir mes résultats ✨
+                        ✨ Voir mes résultats
                     </button>
                 </div>
             </div>
