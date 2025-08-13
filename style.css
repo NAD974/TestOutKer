@@ -880,18 +880,25 @@ button:focus,
 
   .result-card {
     break-inside: avoid;
-  }
-  .logo-banner {
-    max-height: 80px;
-    max-width: 300px;
+    
+ .logo-banner {
+    max-height: 50px;
     width: auto;
     height: auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: var(--rayon-doux);
-    box-shadow: var(--ombre-carte);
-    transition: transform 0.3s ease;
+    margin: 0 auto 12px auto;
+    display: block;
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(22,123,171,0.08);
+    transition: transform 0.25s;
 }
+@media (max-width: 600px) {
+    .logo-banner {
+        max-height: 38px;
+        margin-bottom: 8px;
+    }
+}
+
 
 .logo-banner:hover {
     transform: scale(1.05);
