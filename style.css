@@ -897,4 +897,20 @@ button:focus,
     transform: scale(1.05);
 }
 
+  .image-coeur-banner {
+    max-height: 90px;
+    max-width: 90px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0px 2px 7px rgba(22,123,170,0.15));
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 4px 18px rgba(23,123,170,0.08);
+    transition: transform 0.3s;
+}
+.image-coeur-banner:hover {
+    transform: scale(1.07);
+}
+
 }
